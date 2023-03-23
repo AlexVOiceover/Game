@@ -1,11 +1,13 @@
 console.log("Initialising console");
 
+const words = require('./words.js');
+
 let stage = "1";
 let guessedLetters = [];
 const picture = document.querySelector("#hangmanPic");
 picture.src = "images/" + stage +".png";
 
-const secretWord = "Guessme";
+const secretWord = words[Math.floor(Math.random() * words.length)];
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());
 let hiddenWord = arrSecretword.map(() => "-");
