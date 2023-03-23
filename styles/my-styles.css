@@ -31,7 +31,7 @@ body {padding: 3em;}
 .flex-container-secretWord {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 10px;
     flex-direction: row;
     width: 100%;
@@ -93,8 +93,6 @@ body {padding: 3em;}
 .pressed {
     filter: none}
     
-
-
 .hangmanFrame {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -105,8 +103,9 @@ body {padding: 3em;}
 
 img {
     max-width: 100%;
-    height: auto;
-    width: 100%;}
+    max-height: 100%;
+   
+    }
 
 .guessed {
     background-color: green;
