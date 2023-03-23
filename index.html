@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">   
         <link rel="icon" href="images/favicon.ico">
-        <title>Alexander's Website</title>
+        <title>Hangman</title>
         <link rel="stylesheet" href="styles/my-styles.css">
-        <meta name="description" content="Website where I talk a bit about me">
+        <meta name="description" content="Game for the FAO aplication">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         
@@ -16,88 +16,34 @@
 
         <main>
             <section>
-                <h1>About me</h1>
-                     
-              
-                <h2 class="collapsible"><span class="highlight">Sound Engineer</span></h2>
-                    <div class="flex-container content collapsed">
-                                 
-                        <img class="cardImages" src="images\Sound Engineer.jpg" alt="My Studio">             
-                        <article><p>I have been working as a sound engineer for over 12 years. I started simply by recording and editing my own voiceovers, and now I have produced TV commercials, movie trailers, video games, and more.</p>
-                            <p>One of the things I like most about sound engineering is that it combines both artistic and technical requirements. In terms of software, it is necessary to be skilled, but as a consumer of software, not as a creator, and that is the biggest deficiency for me. In terms of hardware, I love machines, in addition to the many possibilities for modding, vintage markets, or technological novelties.</p>
-                        </article>
-                       
+                <h1>Hangman</h1>
+
+                <div class="grid-container">
+
+                    <div class="flex-container-secretWord"></div>
+
+                    <div class="hangmanFrame"> <img id="hangmanPic" src="images\10.png" alt="10"> 
                     </div>
 
-                <h2 class="collapsible"><span class="highlight">Voice actor</span></h2> 
-                <div class="flex-container content collapsed">
-                         
-                        <article><p>All my life I have been involved with music. I studied piano and singing, and participated in various African percussion bands.</p>
-                            <p>From all of that experience, I took advantage of the knowledge of rhythm, voice technique (breathing, intonation, cadence...) for a new passion: voiceover and dubbing.</p>
-                            <p>After many years, I managed to establish myself in the market, but recent changes in the industry and, above all, the emergence of AI for voice generation, have caused the volume of work to plummet.</p>
-                        </article>
-                        <img class="cardImages" src="images\Voice Actor.jpg" alt="Where magic happens">
-                </div>
+                    <div class="grid-container-keyboard">
+                   
+                        <div class="flex-container-keyboard-line">
+                            <p class="iskey">Q</p><p class="iskey">W</p><p class="iskey">E</p><p class="iskey">R</p><p class="iskey">T</p><p class="iskey">Y</p><p class="iskey">U</p><p class="iskey">I</p><p class="iskey">O</p><p class="iskey">P</p>
+                        </div>
+                         <div class="flex-container-keyboard-line ">
+                            <p class="iskey">A</p><p class="iskey">S</p><p class="iskey">D</p><p class="iskey">F</p><p class="iskey">G</p><p class="iskey">H</p><p class="iskey">J</p><p class="iskey">K</p><p class="iskey">L</p>
+                           
+                        </div>
+                         <div class="flex-container-keyboard-line">
+                            <p class="iskey">Z</p><p class="iskey">X</p><p class="iskey">C</p><p class="iskey">V</p><p class="iskey">B</p><p class="iskey">N</p><p class="iskey">M</p>
+                        </div>
+                    </div>
+
+
+                </div>            
     
             </section>
-
-            <section>
-                <h1>Why move to a web developer career</h1>
-              
-                <h2 class="collapsible"><span class="highlight secondColour">IT Project Manager</span></h2> 
-                    <div class="flex-container secondColour content collapsed">
-
-                            <img class="cardImages" src="images\My tools.jpg" alt="Programming">
-                            <article><p>As an IT professional, I worked as a project manager in software development companies for 7 years. However, I didn't get to develop my technical skills due to my PM role, and ended up doing sales tasks.</p>
-                                <p>It was not at all what I wanted, so I decided to take a chance and switch careers, focusing on sound engineering and voiceover work. During these years, I have continued to program, but only for personal and small projects, such as everything related to 3D printing, my CRM, or Arduino projects.</p>
-                                <p>For these reasons, I would like to return to programming, and although I do not rule out PM tasks, I would love to develop my more technical skills.</p></article>
-                            
-                    </div>
-
-                <h2 class="collapsible"><span class="highlight secondColour">Tinkerer</span></h2> 
-                <div class="flex-container secondColour content collapsed">
-                         
-                        <article><p>I love tinkering with both hardware and software. My heroes are people like James Bruton, Ivan Miranda, Ray Billings, Adam Savage, the guy from the Wintergatan Channel (yes, I'm checking my YouTube subscriptions), and My Mechanics.</p>
-                            <p>While I feel confident following instructions for software-related projects, I struggle to create things from scratch. I believe that pursuing a career as a web developer will help me get back on track with software development, not just as a spectator but as a creator.</p>
-                        </article>
-                        <img class="cardImages" src="images\Tinkering.jpg" alt="Tinkering">
-                </div>
-     
-            </section>
-
-            <section>
-                <h1>What I learned so far</h1>
          
-                <h2 class="collapsible"><span class="highlight thirdColour">Previous workshops</span></h2> 
-
-                <div class="grid-container collapsed">
-                    <div class="grid-item item1"><p>My first workshop. I was young and inexperienced. So naive.</p><p>It was a bit scary to start coding again. Just intalling the tools created the anticipation about something important was going to happen, I was joining the IT family again.</p>
-                        <p>Check the repository of this workshop <a href="https://github.com/AlexVOiceover/HobbyPage">here</a>, or press on the image to go to the website.</p></div>
-                    <div class="grid-item item2"><a href="https://alexvoiceover.github.io/HobbyPage/"><img src="images\FirstWorkshop.jpg" alt="First Workshop"></a></div>
-
-                    <div class="grid-item item3"><a href="https://alexvoiceover.github.io/ProjectGallery/"><img src="images\SecondWorkshop.jpg" alt="Second Workshop"></a></div>
-                    <div class="grid-item item4"><p>In this workshop I discovered the Flex Container, such a great tool to display stuff, I decided to go for a nested structure of Flex Container. I dedicated a ridiculous amount of time on this but I got some knowledge for future projects.</p>
-                        <p>I also went deeper in the use of Source Control using Git. It still feels like some kind of magic.</p>
-                        <p>On this workshop I also had the opportunity to work a bit more with JavaScript functions.</p>
-                        <p>Check the repository <a href="https://github.com/AlexVOiceover/ProjectGallery">here</a></p>
-                    </div>
-
-                    <div class="grid-item item1"><p>This one was hard. Working with objects was very tricky, even when I am supposed to have the mindset from studying IT engineering a very long time ago.</p>
-                        <p>The resources were interesting, but I didn't need most of them for this workshop. With more time I could add more functionalities like deleting or modifying an existing movie.</p>
-                        <p>Check the repository <a href="https://github.com/AlexVOiceover/Movie-Data">here</a></p>
-                    </div>
-                    <div class="grid-item item2"><a href="https://alexvoiceover.github.io/Movie-Data/"><img src="images\ThirdWorkshop.jpg" alt="Third Workshop"></a></div>
-
-                    <div class="grid-item item3"><a href="https://alexvoiceover.github.io/Website/"><img src="images\FourthWorkshop.jpg" alt="Forth Workshop"></a></div>
-                    <div class="grid-item item4"><p>And finally this leads us to this same workshop. I must confess that I spent a huge amount of time on the design, both for the desktop and the mobile versions, it can be a rabbithole.</p>
-                        <p>I think that the use of the flex containers and event listeners is much more refined here than in previous workshops.</p>
-                        <p>Check the repository <a href="https://github.com/AlexVOiceover/website">here</a></p>
-                    </div>
-                
-                </div>
-     
-            </section>
-          
         </main>
         
         <footer>
