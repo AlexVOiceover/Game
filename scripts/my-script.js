@@ -3,7 +3,7 @@ let gameEnded = false;
 const picture = document.querySelector("#hangmanPic");
 const message = document.querySelector("#message");
 
-let stage = 1;
+let stage = 2;
 picture.src = "images/" + stage +".png";
 
 // const secretWord = words[Math.floor(Math.random() * words.length)];
@@ -55,7 +55,7 @@ const keys = document.querySelectorAll(".iskey");
 
             if (hiddenWord.join("") === arrSecretword.join("")) {
               picture.src = "images/winner.gif";
-              message.innerText="You won with " + (stage-1) + " mistakes. Carlton is happy. Press here for another game";
+              message.innerText="You won with " + (stage-2) + " mistakes. Carlton is happy. Press here for another game";
               gameEnded = true;
               message.classList.add("activeMessage");
              }
