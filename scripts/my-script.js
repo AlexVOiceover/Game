@@ -54,7 +54,7 @@ const keys = document.querySelectorAll(".iskey");
             key.classList.add("guessed");
 
             if (hiddenWord.join("") === arrSecretword.join("")) {
-              picture.src = "images/win.gif";
+              picture.src = "images/winner.gif";
               message.innerText="You won with " + (stage-1) + " mistakes. Carlton is happy. Press here for another game";
               gameEnded = true;
               message.classList.add("activeMessage");
