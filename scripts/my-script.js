@@ -3,7 +3,7 @@ let gameEnded = false;
 const picture = document.querySelector("#hangmanPic");
 const message = document.querySelector("#message");
 
-let stage = 1;
+let stage = 9;
 picture.src = "images/" + stage +".png";
 
 const secretWord = words[Math.floor(Math.random() * words.length)];

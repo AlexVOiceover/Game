@@ -4,13 +4,11 @@ h1 {color: rgb(0, 0, 0);
     font-size: xx-large;
     margin-bottom: 1em;}
 
-h2 {color: rgb(255, 255, 255);
+h2 {color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
-    text-align: left;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-bottom: 0.2em;}
+    text-align: center;
+    padding: 1em;}
     
 section {margin-bottom: 7em;}
     
@@ -55,7 +53,7 @@ body {padding: 3em;}
     grid-template-columns: 65% 35%;
     grid-template-rows: 20% 80% ; 
     background-color: #d8d8d8;
-    padding: 3em;
+    padding: 3em; 
     column-gap: 2em;
     row-gap: 1em;
     filter: drop-shadow(12px 12px 10px #5C5C5C);
@@ -69,6 +67,7 @@ body {padding: 3em;}
     background-color: #d8d8d8;
     gap: 0em;
     padding: 1em; 
+    /* padding-left: 0em; */
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -82,8 +81,10 @@ body {padding: 3em;}
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1em;
-    width: 100%;}
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    }
 
 .iskey{
     cursor: pointer;
@@ -127,19 +128,19 @@ img {
         padding: 0.5em;
         column-gap: 0.5em;
         row-gap: 0.5em;
+        padding-left: 1em; 
         border-radius: 2px;
         display: grid;
-        grid-template-columns: 65% 35%;
-        grid-template-rows: 20% 80% ; 
-        background-color: #d8d8d8;
-        filter: drop-shadow(12px 12px 10px #5C5C5C);
         text-align: center;
     }
    
     h2 {font-size: large;}
 
     p {margin-top: 0em;
-        padding: 0.6em; }
+        padding: 0.6em;
+        font-size: small;
+        border-radius: 7px;
+        border-width: 2px; }
 
     section {margin-bottom: 1em;}
 
