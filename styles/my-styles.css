@@ -137,11 +137,12 @@ img {
     h2 {font-size: large;}
 
     p {margin-top: 0em;
-        padding: 0.6em;
-        font-size: small;
-        border-radius: 7px;
-        border-width: 2px; }
+        padding: 0.2em;
+        font-size: medium;
+        border-radius: 3px;
+        border-width: 1px; }
 
+ 
     section {margin-bottom: 1em;}
 
     .flex-container-keyboard-line {

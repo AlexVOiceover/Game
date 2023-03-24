@@ -3,11 +3,11 @@ let gameEnded = false;
 const picture = document.querySelector("#hangmanPic");
 const message = document.querySelector("#message");
 
-let stage = 9;
+let stage = 1;
 picture.src = "images/" + stage +".png";
 
-const secretWord = words[Math.floor(Math.random() * words.length)];
-//const secretWord ="papapapapa";
+//const secretWord = words[Math.floor(Math.random() * words.length)];
+const secretWord ="papapapapa";
 
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());
