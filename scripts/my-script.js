@@ -2,7 +2,9 @@ let guessedLetters = [];
 let gameEnded = false;
 const picture = document.querySelector("#hangmanPic");
 const message = document.querySelector("#message");
+const headingText = document.querySelector("h1");
 
+//Starts from stage 2 to avoid the empty picture, 
 let stage = 2;
 picture.src = "images/" + stage +".png";
 
@@ -13,6 +15,16 @@ function activateMessageButton(){
   message.addEventListener('click', () => {
     if (gameEnded){location.reload();} })
   }
+
+function changeText() {
+  if (stage>4 && !gameEnded){
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    headingText.innerHTML = messages[randomIndex];
+  }
+  if (gameEnded)headingText.innerHTML = "Hangman";
+}
+
+setInterval(changeText, 5000); 
 
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());
@@ -64,6 +76,7 @@ const keys = document.querySelectorAll(".iskey");
               gameEnded = true;
               message.classList.add("activeMessage");
               activateMessageButton();
+             
              }
           }
         }
@@ -78,7 +91,8 @@ const keys = document.querySelectorAll(".iskey");
           message.innerText = "You lost, the secret word was '" + secretWord + "'. Press here for another game.";
           message.classList.add("activeMessage");
           gameEnded = true;
-          activateMessageButton();       
+          activateMessageButton();   
+          
           }
       }
 
@@ -88,5 +102,6 @@ const keys = document.querySelectorAll(".iskey");
        
     });
   });
+
 
  

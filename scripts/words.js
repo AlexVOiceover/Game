@@ -1,3 +1,10 @@
+
+const messages = ["Come on!!", "Don't give up!", "This is supposed to be for kids","I don't want to die like this","Are you even trying?","Maybe English is not your first language...",
+"I am a bit unconfortable here","The rope is a bit raspy","Who is going to feed my dog?","Do you want to know about our lord?","Well... what a situation, right?",
+"Just press a key!","I just ordered some stuff on Amazon","Look behid you! a three headed monkey!","Is this how it ends? I was hoping for a more epic finale!",
+"Not like this!","Try, try again!","Don't be a quitter!","Keep fighting, hero!","One more chance, maybe?","You can do it!","Hang in there, literally!","Stay strong, my friend!",
+"Escape or perish trying!","The suspense is killing!"];
+
 const words = [
   "shampoo",
   "pretend",
