@@ -59,7 +59,6 @@ const keys = document.querySelectorAll(".iskey");
               gameEnded = true;
               message.classList.add("activeMessage");
              }
-
           }
         }
       }
