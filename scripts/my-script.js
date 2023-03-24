@@ -4,11 +4,12 @@ console.log("Initialising console");
 
 let stage = 1;
 let guessedLetters = [];
+let gameEnded = false;
 const picture = document.querySelector("#hangmanPic");
 picture.src = "images/" + stage +".png";
 
-const secretWord = words[Math.floor(Math.random() * words.length)];
-//const secretWord ="aleluiaaleluia";
+// const secretWord = words[Math.floor(Math.random() * words.length)];
+const secretWord ="papapapapa";
 
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());
@@ -29,18 +30,18 @@ const keys = document.querySelectorAll(".iskey");
   // Loop through the title elements and add a click event listener to each
   keys.forEach(key => {
     key.addEventListener('click', () => {
-
-     
       
-      const pressedKey = key.textContent
-      console.log("Pressed " + pressedKey);
+      // When the game ends the keys dont't respond anymore
+      if (gameEnded){
+        
+        return};
 
+      const pressedKey = key.textContent;
 
       if (arrSecretword.includes(pressedKey)) {
 
         guessedLetters.push(pressedKey);
-        console.log(guessedLetters);
-
+    
         for (let i = 0; i < arrSecretword.length; i++) {
           if (arrSecretword[i] === pressedKey) {
         
@@ -58,24 +59,28 @@ const keys = document.querySelectorAll(".iskey");
             if (hiddenWord.join("") === arrSecretword.join("")) {
               picture.src = "images/win.gif";
               console.log("Has ganado");
+              gameEnded = true;
              }
 
           }
         }
       }
       else {
+
         key.classList.add("wrong");
-        stage++;
+        console.log (gameEnded);
+        if (!gameEnded){stage++};
         console.log("Stage " + stage);
         picture.src = "images/" + stage +".png";
 
         if (stage === 10){
           console.log("Muerte")
-          stage=0;
+          gameEnded = true;
+                  
           }
       }
 
-        //add/remove shadow effect on key
+        // add/remove shadow effect on key
     key.classList.add("pressed");
     setTimeout(() => key.classList.remove("pressed"), 70);
        
