@@ -1,7 +1,7 @@
-#Hangman Game
+# Hangman Game
 This is a simple implementation of the classic game "Hangman" using JavaScript and HTML.
 
-##How to Play
+## How to Play
 1. When the game starts, you will see a hidden word represented by dashes (-) on the screen.
 
 2. To guess a letter in the word, click on the corresponding key on the virtual keyboard.
@@ -16,7 +16,7 @@ This is a simple implementation of the classic game "Hangman" using JavaScript a
 
 7. You can start a new game at any time by clicking the "Press here for another game" message that appears when the game ends.
 
-##Code Overview
+## Code Overview
 The game is built using JavaScript and HTML. The main file is index.html, which contains the game's interface. The game logic is implemented in the scripts folder, specifically in the hangman.js file.
 
 The game uses an array of words (words.js) that is randomly selected from to choose the word to be guessed.
