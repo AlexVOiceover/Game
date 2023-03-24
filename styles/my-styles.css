@@ -177,7 +177,8 @@ img {
         border-radius: 3px;
         border-width: 1px; 
         margin-top: 0em;
-        margin-bottom: 0.2em;}
+        margin-bottom: 0.2em;
+        filter: drop-shadow(6px 6px 5px rgb(53, 53, 53));}
 
  
     section {margin-bottom: 1em;}

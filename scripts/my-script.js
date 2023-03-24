@@ -73,8 +73,7 @@ const keys = document.querySelectorAll(".iskey");
         key.classList.add("wrong");
         if (!gameEnded){stage++};
         picture.src = "images/" + stage +".png";
-        
-     
+             
         if (stage === 10){
           message.innerText = "You lost, the secret word was '" + secretWord + "'. Press here for another game.";
           message.classList.add("activeMessage");
