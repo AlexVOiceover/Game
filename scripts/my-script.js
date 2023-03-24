@@ -9,6 +9,11 @@ picture.src = "images/" + stage +".png";
 const secretWord = words[Math.floor(Math.random() * words.length)];
 //const secretWord ="papapapapa";
 
+function activateMessageButton(){
+  message.addEventListener('click', () => {
+    if (gameEnded){location.reload();} })
+  }
+
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());
 let hiddenWord = arrSecretword.map(() => "-");
@@ -58,6 +63,7 @@ const keys = document.querySelectorAll(".iskey");
               message.innerText="You won with " + (stage-2) + " mistakes. Carlton is happy. Press here for another game";
               gameEnded = true;
               message.classList.add("activeMessage");
+              activateMessageButton();
              }
           }
         }
@@ -73,7 +79,7 @@ const keys = document.querySelectorAll(".iskey");
           message.innerText = "You lost, the secret word was '" + secretWord + "'. Press here for another game.";
           message.classList.add("activeMessage");
           gameEnded = true;
-                  
+          activateMessageButton();       
           }
       }
 
@@ -84,5 +90,4 @@ const keys = document.querySelectorAll(".iskey");
     });
   });
 
-  message.addEventListener('click', () => {
-    if (gameEnded){location.reload();} })
+ 
