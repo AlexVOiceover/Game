@@ -19,7 +19,6 @@ const secretWordPanel = document.querySelector(".flex-container-secretWord")
 hiddenWord.forEach(letter => {
   const p = document.createElement('p');
   p.textContent = letter;
-  p.classList.add("iskey");
   secretWordPanel.appendChild(p);
 });
 
