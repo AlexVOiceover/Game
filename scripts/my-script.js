@@ -1,13 +1,13 @@
 console.log("Initialising console");
 
-const words = require('./words.js');
-
-let stage = "1";
+let stage = 1;
 let guessedLetters = [];
 const picture = document.querySelector("#hangmanPic");
 picture.src = "images/" + stage +".png";
 
-const secretWord = words[Math.floor(Math.random() * words.length)];
+
+const secretWord = "Papapapapa";
+
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());
 let hiddenWord = arrSecretword.map(() => "-");
@@ -27,6 +27,8 @@ const keys = document.querySelectorAll(".iskey");
   // Loop through the title elements and add a click event listener to each
   keys.forEach(key => {
     key.addEventListener('click', () => {
+
+     
       
       const pressedKey = key.textContent
       console.log("Pressed " + pressedKey);
@@ -52,7 +54,9 @@ const keys = document.querySelectorAll(".iskey");
             key.classList.add("guessed");
 
             if (hiddenWord.join("") === arrSecretword.join("")) {
-              console.log("Has ganado");}
+              picture.src = "images/win.gif";
+              console.log("Has ganado");
+             }
 
           }
         }
@@ -63,11 +67,15 @@ const keys = document.querySelectorAll(".iskey");
         console.log("Stage " + stage);
         picture.src = "images/" + stage +".png";
 
-        if (stage === 10){console.log("Muerte")}}
+        if (stage === 10){
+          console.log("Muerte")
+          stage=0;
+          }
+      }
 
         //add/remove shadow effect on key
     key.classList.add("pressed");
-    setTimeout(() => key.classList.remove("pressed"), 100);
+    setTimeout(() => key.classList.remove("pressed"), 70);
        
     });
   });
