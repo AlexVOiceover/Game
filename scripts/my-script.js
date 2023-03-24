@@ -1,4 +1,4 @@
-import words from "./words.js";
+//import words from "./words.js";
 
 console.log("Initialising console");
 
