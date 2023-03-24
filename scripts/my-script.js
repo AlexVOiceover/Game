@@ -55,7 +55,7 @@ const keys = document.querySelectorAll(".iskey");
 
             if (hiddenWord.join("") === arrSecretword.join("")) {
               picture.src = "images/win.gif";
-              message.innerText="You won with " + (stage+1) + " attempts. Carlton is happy. Press here for another game";
+              message.innerText="You won with " + (stage-1) + " mistakes. Carlton is happy. Press here for another game";
               gameEnded = true;
               message.classList.add("activeMessage");
              }
