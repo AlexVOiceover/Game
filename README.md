@@ -28,6 +28,7 @@ The game uses the following global variables:
 * picture: a reference to the img element that displays the hangman figure.
 * message: a reference to the h2 element that displays messages to the player.
 * stage: a number that keeps track of the number of incorrect guesses made by the player.
+
 The game flow is controlled by the keys event listener, which listens for clicks on the virtual keyboard. When a key is clicked, the listener checks whether the letter is in the hidden word and responds accordingly. If the letter is in the word, the letter is revealed and the keyboard key turns green. If the letter is not in the word, the hangman figure is drawn and the key turns red.
 
 When the game ends, a message is displayed indicating whether the player has won or lost. The message includes a clickable link to start a new game.
