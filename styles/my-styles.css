@@ -69,7 +69,8 @@ body {padding: 3em;}
     background-color: #d8d8d8;
     gap: 0em;
     padding: 1em; 
-    /* padding-left: 0em; */
+    padding-left: 0.5em; 
+    padding-right: 0.5em;
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -114,6 +115,10 @@ img {
     background-color: red;}
 
 @media all and (pointer:none) , (pointer:coarse) {
+
+    h1 {margin-top: 0em;
+        margin-bottom: 0.3em;}
+
     body {
         padding: 0.3em;
     } 
@@ -144,26 +149,44 @@ img {
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        align-self: center;}
+        align-self: center;
+        max-height: 30em;}
    
     .grid-container-keyboard {
         grid-row-start: 3;
-        grid-row-end: 4;}
+        grid-row-end: 4;
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-bottom: 0.4em;}
 
     h2 {font-size: large;}
 
     p {margin-top: 0em;
         padding: 0.2em;
         font-size: medium;
+        min-width: 0.8em;
         border-radius: 3px;
         border-width: 1px; }
 
  
     section {margin-bottom: 1em;}
 
+    .flex-container-secretWord {
+        padding-left: 0em;
+        padding-right: 0em;
+        padding-bottom: 0em;}
+        
     .flex-container-keyboard-line {
-            padding: 0em;
-            }
-   
+        padding: 0em;
+         }
+
+    .activeMessage {
+      
+        font-size: large;
+        cursor: pointer;
+        border-style: solid;
+        border-radius: 10px;
+        padding: 1em;}
+       
                     
 } 
