@@ -154,8 +154,8 @@ img {
         grid-row-start: 2;
         grid-row-end: 3;
         align-self: center;
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 4em;
+        padding-right: 4em;
         max-height: 30em;}
    
     .grid-container-keyboard {
@@ -168,7 +168,8 @@ img {
         row-gap: 02.em;}
 
     h2 {font-size: large;
-        margin-top: 0.2em;}
+        margin-top: 0.2em;
+       }
 
     p {margin-top: 0em;
         padding: 0.4em;
@@ -200,7 +201,10 @@ img {
         border-style: solid;
         border-radius: 3px;
         border-width: 1px; 
-        padding: 1em;}
+        margin-top: 0.4em;
+        padding-top: 0.4em;
+        padding-bottom: 0.4em;
+    }
        
                     
 } 
