@@ -24,7 +24,7 @@ function changeText() {
   if (gameEnded)headingText.innerHTML = "Hangman";
 }
 
-setInterval(changeText, 6000); 
+setInterval(changeText, 10000); 
 
 //Split to create an array and with the map method it swaps each one for his uppercase equivalent
 const arrSecretword = secretWord.split("").map(letter => letter.toUpperCase());

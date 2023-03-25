@@ -32,3 +32,23 @@ The game uses the following global variables:
 The game flow is controlled by the keys event listener, which listens for clicks on the virtual keyboard. When a key is clicked, the listener checks whether the letter is in the hidden word and responds accordingly. If the letter is in the word, the letter is revealed and the keyboard key turns green. If the letter is not in the word, the hangman figure is drawn and the key turns red.
 
 When the game ends, a message is displayed indicating whether the player has won or lost. The message includes a clickable link to start a new game.
+
+## Planning
+The idea was to start just with a basic design and add funtionallity in different stages.
+* Capture the click events on the keyboard.
+* Implement the logic to check if a guess is right.
+* Update the picture to reflect the progress of the game.
+
+## Building
+The game was built incrementally.
+
+* The first stage was just to distribute the elements on the screen. I did it on desktop mode but I forgot to check the mobile version. Because of that I had to spend a lot of time later on readjusting the distribution and sizes to work well on a phone. For future projects I will design taking in consideration both versions from the beggining.
+* Next step was to make the keyboard recognise the click event. When I first designed it I used `<p>` elements, so I just carried on with that decision. Maybe would make more sense to use buttons.
+* At this point I realised that I was showing the secret word all the time... so I created a second array `hiddenWord` substituting all the letters for the `-` symbol and this array is the one shown at `.flex-container-secret-word`.
+* I modifed the usability changing the colours both of the keyboard and the secret word after each guess.
+* Until this moment I was using just a sample word, but the idea was to use a word randomlly choosed from an array. I stored all the possible words in `words.js` to keep the data in a separated file. Later on I will use this same file for some random messages that will be shown where the title goes.
+* Trying it on mobile didn't work as spected, so on the CSS file I capture when the user is using a phone with `@media all and (pointer:none),(pointer:coarse) {}` and readjust both the distribution and sizes of everything to look well on a phone screen.
+
+
+## Debugging
+For debugging I just needed to show messages on the console using `console.log` at strategic points. The aim was to monitorise the value of variables and verify if they were right or if any adjust was needed.
