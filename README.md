@@ -65,5 +65,3 @@ The game was built incrementally.
 
 ## Debugging
 For debugging I just needed to show messages on the console using `console.log` at strategic points. The aim was to monitorise the value of variables and verify if they were right or if any adjust was needed.
-
-Just testing if I can access for a different PC
