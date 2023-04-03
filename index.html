@@ -8,12 +8,10 @@
         <link rel="stylesheet" href="styles/my-styles.css">
         <meta name="description" content="Game for the FAO aplication">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">  
-        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">     
     </head>
  
     <body>
-
         <main>
             <section>
                 <h1 id="headingMessage">Hangman</h1>
@@ -22,42 +20,32 @@
 
                     <div class="flex-container-secretWord"></div>
 
-                    <div class="hangmanFrame"> <img id="hangmanPic"> 
-                    </div>
+                    <div class="hangmanFrame"> <img id="hangmanPic"></div>
 
-                    <div class="grid-container-keyboard">
-                   
+                    <div class="grid-container-keyboard">                 
                         <div class="flex-container-keyboard-line">
                             <p class="iskey">Q</p><p class="iskey">W</p><p class="iskey">E</p><p class="iskey">R</p><p class="iskey">T</p><p class="iskey">Y</p><p class="iskey">U</p><p class="iskey">I</p><p class="iskey">O</p><p class="iskey">P</p>
                         </div>
                          <div class="flex-container-keyboard-line ">
-                            <p class="iskey">A</p><p class="iskey">S</p><p class="iskey">D</p><p class="iskey">F</p><p class="iskey">G</p><p class="iskey">H</p><p class="iskey">J</p><p class="iskey">K</p><p class="iskey">L</p>
-                           
+                            <p class="iskey">A</p><p class="iskey">S</p><p class="iskey">D</p><p class="iskey">F</p><p class="iskey">G</p><p class="iskey">H</p><p class="iskey">J</p><p class="iskey">K</p><p class="iskey">L</p>  
                         </div>
                          <div class="flex-container-keyboard-line">
                             <p class="iskey">Z</p><p class="iskey">X</p><p class="iskey">C</p><p class="iskey">V</p><p class="iskey">B</p><p class="iskey">N</p><p class="iskey">M</p>
                         </div>
                     </div>
 
-
                 </div> 
                 
                 <div>
                     <h2 id="message">Press the keys on the screen to guess the secret word</h2>
-
                 </div>
     
             </section>
          
         </main>
-        
-        <footer>
-                                           
-        </footer>  
-      
+            
+        <!--It is important to set right the order, otherwise the content of words wouldn't be accesible-->
         <script src="scripts/words.js"></script> 
-        <script src="scripts/my-script.js"></script> 
-        
-
+        <script src="scripts/my-script.js"></script>     
     </body>
 </html>

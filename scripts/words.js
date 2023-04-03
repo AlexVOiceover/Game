@@ -2,8 +2,8 @@
 const messages = ["Come on!!", "Don't give up!", "I don't want to die","Are you even trying?",
 "I am a bit unconfortable","The rope is a bit raspy","I'm hungry","Well... what a situation",
 "Just press a key!","Look behid you!","Is this how it ends?",
-"Not like this!","Try, try again!","Don't be a quitter!","Keep fighting, hero!","You can do it!","Hang in there, literally!","Stay strong, my friend!",
-"Escape or perish trying!","The suspense is killing!"];
+"Not like this!","Try, try again!","Don't be a quitter!","Keep fighting, hero!","You can do it!",
+"Hang in there, literally!","Stay strong, my friend!", "Escape or perish trying!","The suspense is killing!"];
 
 const words = [
   "shampoo",
